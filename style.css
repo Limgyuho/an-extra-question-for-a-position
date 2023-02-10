@@ -1,0 +1,51 @@
+article {
+    position:absolute;
+    top:10%;
+    left:10%;
+    right:10%;
+    bottom:10%;
+    border:10px solid black;
+}
+
+article > section {
+    width:50%;
+    height:50%;
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+article > section:nth-child(2) {
+    top:0;
+    right:0;
+    left:auto;
+}
+
+article > section > div {
+    width:40%;
+    height:40%;
+    background-color:red;
+    border:5px solid black;
+    position:absolute;
+}
+
+article > section > div:nth-child(1) {
+    top:10%;
+    left:10%;
+}
+
+article > section > div:nth-child(2) {
+    background-color:orange;
+    top:30%;
+    left:30%;
+}
+
+article > section > div:nth-child(3) {
+    background-color:green;
+    top:50%;
+    left:50%;
+}
+
+article > section:nth-child(2) > div:nth-child(2) {
+    z-index:1;
+}
